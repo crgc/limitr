@@ -15,6 +15,10 @@
     "type": "git",
     "url": "https://github.com/chuckbuckethead/limitr.git"
   },
+  "keywords": [
+    "rate limit",
+    "rate limiter"
+  ],
   "author": {
     "name": "Carlos González",
     "email": "c.gonzalez@jellyhub.com"
