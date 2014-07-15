@@ -1,0 +1,24 @@
+{
+  "name": "limitr",
+  "description": "http request rate-limiter middleware for node.js",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {
+    "tape": "^2.13.3",
+    "express": "3.x",
+    "request": "2.36.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckbuckethead/limitr.git"
+  },
+  "author": {
+    "name": "Carlos González",
+    "email": "c.gonzalez@jellyhub.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuckbuckethead/limitr/issues"
+  },
+  "homepage": "https://github.com/chuckbuckethead/limitr"
+}
