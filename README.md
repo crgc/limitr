@@ -13,7 +13,7 @@ var express = require('express');
 var limitr = require('limitr');
 
 var app = express();
-app.use(limitr({ limit: 10, period: 1 }));
+app.use(limitr({ limit: 10, rate: 1 }));
 ```
 
 ## limitr(options)
