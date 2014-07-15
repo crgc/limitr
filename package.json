@@ -1,7 +1,7 @@
 {
   "name": "limitr",
   "description": "http request rate-limiter middleware for node.js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "devDependencies": {
     "tape": "^2.13.3",
