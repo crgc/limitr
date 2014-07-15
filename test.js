@@ -7,7 +7,7 @@ var test = require('tape'),
 var app = express();
 var config = {
   limit: 5,
-  period: 2 /* seconds */,
+  rate: 2 /* seconds */,
   clientId: 'headers.token',
   ignore: ['ignore-me']
 };
