@@ -38,8 +38,8 @@ limitr(config);
 The required options are `limit` and `rate`; all others are optional.
 
 * `limit`- the rate limit ceiling.
-* `rate`- the rate at which the limit window will be reset.
-* `clientId`- the value (preferably unique) in the `req` object by which to identify the client (default: `'ip'`)
+* `rate`- the rate at which the limit window will be reset, in seconds.
+* `clientId`- the name of the field in the `req` object by which to identify the client. Can be specified in a path-like fashion. For example: `headers.foo-token` (default: `'ip'`)
 * `ignore`- a set of clients that will not be subject to rate-limiting (default: `[]`)
 * `message`- the message to be returned to the client when the limit is exceeded (default: `'API rate limit exceeded.'`)
 
