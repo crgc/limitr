@@ -16,8 +16,11 @@
     "url": "https://github.com/chuckbuckethead/limitr.git"
   },
   "keywords": [
-    "rate limit",
-    "rate limiter"
+    "rate",
+    "limiter",
+    "simple",
+    "middleware",
+    "http"
   ],
   "author": {
     "name": "Carlos González",
