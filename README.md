@@ -1,5 +1,7 @@
 # limitr
 
+[![Build Status](https://travis-ci.org/chuckbuckethead/limitr.png?branch=master)](https://travis-ci.org/chuckbuckethead/limitr)
+
 HTTP request rate-limiter middleware for node.js
 
 # Install
@@ -25,7 +27,7 @@ var config = {
   limit: 10,
   rate: 1,
   clientId: 'ip', //default
-  ignore: ['127.0.0.1'], 
+  ignore: ['127.0.0.1'],
   message: 'API rate limit exceeded. See https://foo-url.com/api#rate-limits for details.'
 };
 limitr(config);
