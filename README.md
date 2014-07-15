@@ -49,7 +49,7 @@ HTTP headers are returned in order to keep the client informed about his rate li
 * `X-RateLimit-Remaining`- the number of requests left for rate window.
 * `X-RateLimit-Reset`- the remaining window before the rate limit resets in UTC epoch milliseconds.
 
-When a client exceeds the rate limit for a given API endpoint, the limitr will interrupt the request and return an HTTP 429 [“Too Many Requests”](http://tools.ietf.org/html/rfc6585#section-4) response code. The body will contain the `message`.
+When a client exceeds the rate limit for a given API endpoint, limitr will interrupt the request and return an HTTP 429 [“Too Many Requests”](http://tools.ietf.org/html/rfc6585#section-4) response code. The body will contain the `message`.
 
 # License
 
