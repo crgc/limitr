@@ -22,6 +22,8 @@ app.use(limitr({ limit: 10, rate: 1 }));
 
 limitr instances can be configured to apply rate-limits, ignore certain requests or identify clients by a given field on the `req` object. For instance, you might want to increase the rate-limit for the resources that are not subject to much traffic, and decrease it for the ones that are.
 
+The following example sets up a limitr instance that rate-limits at ten requests per second. It uses the client's IP to identify requests, and ignores (i.e., doesn't rate-limit) requests coming from `127.0.0.1`.
+
 ```javascript
 var config = {
   limit: 10,
