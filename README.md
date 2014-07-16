@@ -47,9 +47,9 @@ The required options are `limit` and `rate`; all others are optional.
 
 HTTP headers are returned in order to keep the client informed about his rate limit for a given API endpoint.
 
-* `X-RateLimit-Limit`- the rate limit ceiling for that given request.
-* `X-RateLimit-Remaining`- the number of requests left for rate window.
-* `X-RateLimit-Reset`- the remaining window before the rate limit resets in UTC epoch milliseconds.
+* `X-RateLimit-Limit`- the maximum number of requests that the consumer is permitted to make within the `rate` window.
+* `X-RateLimit-Remaining`- the number of requests remaining in the current rate limit window.
+* `X-RateLimit-Reset`- the time at which the current rate limit window resets in UTC epoch seconds.
 
 When a client exceeds the rate limit for a given API endpoint, limitr will interrupt the request and return an HTTP 429 [“Too Many Requests”](http://tools.ietf.org/html/rfc6585#section-4) response code. The body will contain the `message`.
 
