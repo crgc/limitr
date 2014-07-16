@@ -20,7 +20,7 @@ app.use(limitr({ limit: 10, rate: 1 }));
 
 ## limitr(options)
 
-limitr can be configured to apply rate-limits, ignore certain clients or identify clients by any given value on the `req` object. For instance, you might want to increase the rate-limit for the resources that are not subject to much traffic, and decrease it for the ones that are.
+limitr instances can be configured to apply rate-limits, ignore certain requests or identify clients by a given field on the `req` object. For instance, you might want to increase the rate-limit for the resources that are not subject to much traffic, and decrease it for the ones that are.
 
 ```javascript
 var config = {
