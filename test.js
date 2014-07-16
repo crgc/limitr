@@ -4,7 +4,6 @@ var test = require('tape'),
     limitr = require('./index'),
     TimeDevice = require('./lib/time-device');
 
-var app = express();
 var config = {
   limit: 5,
   rate: 2 /* seconds */,
